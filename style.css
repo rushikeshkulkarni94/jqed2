@@ -1,0 +1,49 @@
+ul{
+    list-style-type: none;
+    margin-left: 10px;
+
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 5px 20px;
+}
+
+.nav{
+    display: flex;
+ padding: 1%;
+   
+    background-color: brown;
+  
+   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;   
+
+}
+li{
+    text-decoration-color: white;
+    padding-right: 5px;
+    margin-left: 10px;
+}
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: black;
+}
+
+a:hover
+{   text-decoration: none;
+color: white;}
+
+@media screen and (max-width:600px){
+.nav{
+    display: flex;
+    flex-direction: column;
+
+}
+li{
+    padding-top: 5px;
+}
+}
